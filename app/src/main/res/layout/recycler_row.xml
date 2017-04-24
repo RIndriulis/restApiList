@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rowCard"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:focusable="true"
+    android:clickable="true"
+    android:foreground="?android:attr/selectableItemBackground"
+    android:layout_marginTop="@dimen/activity_horizontal_margin"
+    android:layout_marginStart="@dimen/activity_horizontal_margin"
+    android:layout_gravity="center_horizontal"
+    android:layout_centerInParent="true"
+    android:orientation="horizontal"
+    card_view:cardBackgroundColor="@android:color/white"
+    card_view:cardCornerRadius="@dimen/round_corners"
+    card_view:cardElevation="@dimen/elevation">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+        <ImageView
+            android:contentDescription="@string/app_name"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:scaleType="fitCenter"
+            android:transitionName="trImage"
+            android:id="@+id/image"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:id="@+id/title"
+            android:gravity="center"
+            android:padding="20dp"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@android:color/black"
+            android:shadowColor="@color/cardview_shadow_start_color"
+            android:shadowDx="1"
+            android:shadowDy="-1"
+            android:shadowRadius="1" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:id="@+id/age"
+            android:gravity="center"
+            android:padding="5dp"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@android:color/black"
+            android:shadowColor="@color/cardview_shadow_start_color"
+            android:shadowDx="1"
+            android:shadowDy="-1"
+            android:shadowRadius="1" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:id="@+id/loco"
+            android:gravity="end"
+            android:padding="5dp"
+            style="@style/TextAppearance.AppCompat.Button"
+            android:textColor="@android:color/black"
+            android:shadowColor="@color/cardview_shadow_start_color"
+            android:shadowDx="1"
+            android:shadowDy="-1"
+            android:shadowRadius="1" />
+    </LinearLayout>
+</android.support.v7.widget.CardView>
